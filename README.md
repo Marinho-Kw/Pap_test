@@ -7,4 +7,4 @@
  #no programa que 'simula' um sistema de compra de passagns só está funcionando a primeira opção
 
  comandos:
- #sim pode er entendido como 1 e não pode ser entendido como 2
+ #sim pode ser entendido como 1 e não pode ser entendido como 2
