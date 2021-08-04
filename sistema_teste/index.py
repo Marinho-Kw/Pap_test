@@ -50,7 +50,7 @@ while True:
 
                 if op_sistema_inicial_2 == '1' or op_sistema_inicial_2 == 'um':
 
-                    pass_rio = int(input('Quantas passagem para o Rio de Janerio voçé vai querer?:'))
+                    pass_rio = int(input('Quantas passagem para o Rio de Janerio?:'))
                     conta_da_passagem = pass_rio * 250
 
                     while True:
@@ -112,7 +112,7 @@ while True:
         3 = orçamento 
         4 = sair 
         controles:
-        Pode ser escrito 1 ou um np sistema principal
+        Pode ser escrito 1 ou um no sistema principal
         e o numero 1 e 2 pode ser usado como sim e não''')
             print('-' * 40)
 
