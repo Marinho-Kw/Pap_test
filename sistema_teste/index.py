@@ -11,17 +11,20 @@ while True:
 
     print('Agora escolha qual programa voçé quer rodar no terminal')
     sleep(1)
-    print('1 = sistema de passagns de uma rodoviaria')
+    print('1 = Sistema de passagns de uma rodoviaria')
     sleep(1)
-    print('2 = sistema escolar')
+    print('2 = Sistema escolar')
     sleep(1)
-    print('3 = calculadora de velocidade média')
+    print('3 = Calculadora de velocidade média')
     sleep(1)
-    print('4 = calculadora simples')
+    print('4 = Calculadora simples')
     sleep(1)
+    print('5 = Analize de triangulo')
+    sleep(1)
+    print('6 = Radar de velocidade simples')
     print('-' * 40)
     sleep(1)
-    es_sis_prin = input(':')
+    es_sis_prin = input(':').lower()
 
     if es_sis_prin == '1' or es_sis_prin == 'um':
         while True:
@@ -46,11 +49,11 @@ while True:
                 print('4 Curitiba R$ 450')
                 sleep(1)
                 print('-' * 40)
-                op_sistema_inicial_2 = input(':')
+                op_sistema_inicial_2 = input(':').lower()
 
                 if op_sistema_inicial_2 == '1' or op_sistema_inicial_2 == 'um':
 
-                    pass_rio = int(input('Quantas passagem para o Rio de Janerio?:'))
+                    pass_rio = int(input('Quantas passagem para o Rio de Janerio voçé vai querer?:'))
                     conta_da_passagem = pass_rio * 250
 
                     while True:
@@ -68,7 +71,7 @@ while True:
                         print('3 Cartão de credito parcelado em 3x: sem desconto no valor total')
                         sleep(1)
                         print('-' * 40)
-                        op_cart = input(':')
+                        op_cart = input(':').lower()
                         sleep(1)
 
                         if op_cart == '1' or op_cart == 'um':
@@ -112,11 +115,11 @@ while True:
         3 = orçamento 
         4 = sair 
         controles:
-        Pode ser escrito 1 ou um no sistema principal
+        Pode ser escrito 1 ou um np sistema principal
         e o numero 1 e 2 pode ser usado como sim e não''')
             print('-' * 40)
 
-            opção_sistema = input(':')
+            opção_sistema = input(':').lower()
 
             if opção_sistema == '4' or opção_sistema == 'quatro':
                 print('encerrando')
@@ -131,7 +134,7 @@ while True:
                     sleep(1)
                     print(orcamento)
 
-                    op_orcamento = input('Você deseja adicionar uma renda?:')
+                    op_orcamento = input('Você deseja adicionar uma renda?:').lower()
                     if op_orcamento == 'sim' or op_orcamento == '1':
                         print('quantos Reais você deseja adicionar?')
 
@@ -143,7 +146,7 @@ while True:
                         sleep(1)
                         print(ops)
 
-                        op_orcamento_final = input('você deseja adicionar mais algum valor?:')
+                        op_orcamento_final = input('você deseja adicionar mais algum valor?:').lower()
 
                         if op_orcamento_final == 'sim' or op_orcamento_final == '1':
                             print('vamos lá então')
@@ -165,17 +168,17 @@ while True:
                     print(chamada)
                     print('-' * 40)
                     sleep(1)
-                    ad_cham = input('você deseja adicionar um aluno a chamada?')
+                    ad_cham = input('você deseja adicionar um aluno a chamada?').lower()
 
                     if ad_cham == 'sim' or ad_cham == '1':
                         print('-' * 40)
-                        ad = input('adicione um nome:')
+                        ad = input('adicione um nome:').lower()
                         print('-' * 40)
 
                         chamada[4] = ad
 
                         print(chamada)
-                        op_chamada_final = input('Deseja Adicionar um novo nome?')
+                        op_chamada_final = input('Deseja Adicionar um novo nome?').lower()
 
                         if op_chamada_final == 'sim' or op_chamada_final == '1':
                             print('vamos lá')
@@ -207,7 +210,7 @@ while True:
                     print('''
         opções aceitas:sim ou 1, não ou 2''')
 
-                    opção_médias = input('deseja adicionar mais uma média:')
+                    opção_médias = input('deseja adicionar mais uma média:').lower()
 
                     if opção_médias == 'não' or opção_médias == '2':
                         print('encerrando')
@@ -223,7 +226,7 @@ while True:
                         sleep(1)
                         print(médias)
 
-                        op_média_final = input('deseja adicionar uma média nova?:')
+                        op_média_final = input('deseja adicionar uma média nova?:').lower()
 
                         if op_média_final == 'sim' or op_média_final == '1':
                             print('retornando o programa')
@@ -258,9 +261,9 @@ while True:
         vm = cal_si / cal_tf
         print('Aqui está, a velocidade média da sua operação é de {}km/h'.format(vm))
         print('-' * 40)
-        op = input('Deseja saber a sua aceleração?')
+        op = input('Deseja saber a sua aceleração?').lower()
 
-        if op == 'sim':
+        if op == 'sim' or op == '1':
             acl = vm / cal_tf
             print('a sua aceleração é de {}km/h'.format(acl))
 
@@ -284,7 +287,7 @@ while True:
             print('3 = divisão')
             sleep(1)
             print('4 = vezes')
-            es_cal = input(':')
+            es_cal = input(':').lower()
 
             if es_cal == '1' or es_cal == 'um':
                 while True:
@@ -293,7 +296,7 @@ while True:
                     cal_soma = soma_1 + soma_2
                     print('resultado:{}'.format(cal_soma))
 
-                    soma_nova = input('deseja somar novamente?:')
+                    soma_nova = input('deseja somar novamente?:').lower()
 
                     if soma_nova == '1' or soma_nova == 'sim':
                         print('reiniciando o programa')
@@ -316,7 +319,7 @@ while True:
                     print('o resultado da operação é de {}'.format(cal_sub))
 
 
-                    es_sub = input('deseja subtrair novamente?:')
+                    es_sub = input('deseja subtrair novamente?:').lower()
 
                     if es_sub == 'sim' or es_sub == '1':
                         print('reiniciando o programa')
@@ -338,7 +341,7 @@ while True:
 
                     print('resultado :{]'.format(cal_div))
 
-                    es_div = input('deseja dividir novamente?:')
+                    es_div = input('deseja dividir novamente?:').lower()
 
                     if es_div == 'sim' or es_div == '1':
                         print('reiniciando o programa')
@@ -359,7 +362,7 @@ while True:
 
                     print('resultado:{}'.format(conta_x))
 
-                    es_x = input('deseja multiplicar novamente:')
+                    es_x = input('deseja multiplicar novamente:').lower()
 
                     if es_x == '1' or es_x == 'sim':
                         print('reiniciando o programa')
@@ -372,4 +375,86 @@ while True:
                         print('opção invalida')
 
 
+    elif es_sis_prin == '5' or es_sis_prin == 'cinco':
+        while True:
+            print('=' * 40)
+            print('-' * 40)
+            print('Analize de segmentos de um triangulo')
+            print('-' * 40)
+            print('=' * 40)
 
+            sleep(1)
+            print('Me informe o segmentos:')
+            sag = float(input('segmento 1:'))
+            sleep(1)
+            sag_2 = float(input('segmento 2:'))
+            sleep(1)
+            sag_3 =  float(input('segmento 3:'))
+            sleep(1)
+            if sag < sag_2 + sag_3 and sag_2 < sag + sag_3 and sag_3 < sag + sag_2:
+                print('os segmentos mencionados podem sim forma um triangulo')
+
+                sleep(1)
+
+                op_velo = input('Deseja reiniciar o programa?:').lower()
+
+                if op_velo == '1' or op_velo == 'sim':
+                    print('reiniciando o programa')
+                    sleep(1)
+                elif op_velo == '2' or op_velo == 'não':
+                    sleep(1)
+                    break
+
+            else:
+                print('os segmentos mencionados não podem forma um triangulo')
+
+            op_velo = input('Deseja reiniciar o programa?:').lower()
+
+            if op_velo == '1' or op_velo == 'sim':
+                print('reiniciando o programa')
+                sleep(1)
+            elif op_velo == '2' or op_velo == 'não':
+                sleep(1)
+                break
+
+
+    elif es_sis_prin == '6' or es_sis_prin == 'seis':
+        while True:
+            print('-' * 40)
+            print('Radar de velocidade')
+            print('-' * 40)
+            sleep(1)
+            p = float(input('Qual foi a velocidade média do carro?:'))
+            multa = (p - 60) * 7
+            sleep(1)
+            if p > 80:
+                sleep(1)
+                print('multado num valor de R${}'.format(multa))
+                sleep(1)
+                op_media = input('deseja reiniciar o programa?:').lower()
+
+                if op_media == '1' or op_media == 'sim':
+                    print('reiniciando o programa')
+                    sleep(1)
+
+                elif op_media == '2' or op_media == 'não':
+                    sleep(1)
+                    break
+
+
+            elif p < 80:
+                sleep(1)
+                print('A sua velocidade esta dentro do permitido')
+                sleep(1)
+                print('prossiga a sua viagem')
+                sleep(1)
+
+                op_media = input('deseja reiniciar o programa?:').lower()
+
+                if op_media == '1' or op_media == 'sim':
+                    print('reiniciando o programa')
+                    sleep(1)
+
+                elif op_media == '2' or op_media == 'não':
+                    sleep(1)
+                    break
